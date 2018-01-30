@@ -17,6 +17,4 @@ class Question {
         questionText = text
         answer = correctAnswer
     }
-    
-    
 }
