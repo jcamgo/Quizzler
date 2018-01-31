@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let allQuestions = QuestionBank()
+    var pickedAnswer : Bool = false
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -27,7 +28,14 @@ class ViewController: UIViewController {
 
 
     @IBAction func answerPressed(_ sender: AnyObject) {
-  
+        if sender.tag == 1 {
+            pickedAnswer = true
+        }
+        else if sender.tag == 2 {
+            pickedAnswer = false
+        }
+        
+        checkAnswer()
     }
     
     
@@ -43,6 +51,11 @@ class ViewController: UIViewController {
     
     func checkAnswer() {
         
+        let correctAnswer = allQuestions.list[0].answer
+        if correctAnswer == pickedAnswer {
+            print("You've got it!")
+        }
+        else print("Wrong!")
     }
     
     
