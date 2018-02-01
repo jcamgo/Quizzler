@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         
     }
     
-    
     @IBAction func answerPressed(_ sender: AnyObject) {
         if sender.tag == 1 {
             pickedAnswer = true
