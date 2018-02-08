@@ -51,7 +51,6 @@ class ViewController: UIViewController {
         
     }
     
-    
     func checkAnswer() {
         
         let correctAnswer = allQuestions.list[questionNumber].answer
