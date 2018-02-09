@@ -41,7 +41,6 @@ class ViewController: UIViewController {
         questionLabel.text = allQuestions.list[questionNumber].questionText
     }
     
-    
     func updateUI() {
         
     }
